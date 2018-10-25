@@ -1,0 +1,34 @@
+:root{
+    --mid-gary: #E0DED8;
+    --soft-gary: #EAEAEA;
+    --light-gary: #f8f9fa;
+    --high-red: #C82333;
+    --high-orange: #db8b34;
+}
+
+/* The animation code */
+@keyframes anime-dropdown {
+    from {
+        opacity: 0;
+        transform: translate(0,-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+/* The element to apply the animation to */
+.animation-dropdown {
+    animation-name: anime-dropdown;
+    animation-duration: 0.5s;
+}
+.animation-card{
+    transform: translate(0,0px);
+    transition: all 0.25s;
+}
+
+.animation-card:hover {
+    transform: translate(0,-10px);
+    box-shadow: 1px 4px 12px rgba(0,0,0,0.4);
+}
